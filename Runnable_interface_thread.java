@@ -1,8 +1,9 @@
 class NewThread implements Runnable{
-    Thread t ;
+    Thread t = new Thread(this,"nitin_Lohumi");
     NewThread(){
-        t = new Thread(this,"nitin_Lohumi");
         System.out.println("child thread "+ t);
+        t.setName("lohuminitin");
+        System.out.println(t.getName());
     }
     public void run(){
         try{
