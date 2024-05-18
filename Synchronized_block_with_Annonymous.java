@@ -14,7 +14,7 @@ class Sender {
 class SenderThread extends Thread {
     String msg;
     Sender obj;
-    SenderThread(String m ,Sender o){
+    SenderThread(String m ,Sender o ){
        this.msg = m;
        this.obj = o;
       }
