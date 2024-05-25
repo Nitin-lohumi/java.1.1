@@ -5,6 +5,7 @@ public class Array {
         arr[0]=new int [2];
         arr[1]=new int[2];
         arr[2]= new int[2];
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         int sum=0;
         for (int i=0; i<arr.length; i++){
