@@ -9,9 +9,11 @@ class Enum {
         for(Day d : Day.values()){
           System.out.println("day =>"+d);
         }
+        for(Count C : Count.values()){
+           System.out.println(" count  = "+ C + " the value  is "+ C.value);
+        }
     }
 }
-
 enum Day {
  MONDAY,
  TUESDAY,
@@ -20,4 +22,15 @@ enum Day {
  FRIDAY,
  SATURDAY,
  SUNDAY
+}
+enum Count{
+  ONE(1),
+  TWO(2),
+  three(3),
+  four(4),
+  five(5);
+  int value;
+  private Count(int i) {
+    this.value = i;
+  }
 }
