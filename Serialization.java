@@ -2,7 +2,6 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-
 class Demo implements java.io.Serializable{
     public int a ;
     public String str;
@@ -13,8 +12,8 @@ class Demo implements java.io.Serializable{
 }
 public class Serialization {
     public static void main(String[] args) {
-        Demo d = new Demo(1, "nitin");
-        String filename ="Serialization.txt";
+        Demo d = new Demo(1, "hello my name is nitin and this is wrote by java");
+        String filename ="C:/Users/Lenovo/Documents/serial.txt";
         try {
         FileOutputStream file  = new FileOutputStream(filename);
         ObjectOutputStream out  = new ObjectOutputStream(file);
@@ -34,7 +33,7 @@ public class Serialization {
             file.close();
             System.out.println("the object is deserialized");
             System.out.println("a = " +object1.a);
-            System.out.println("string  = "+ object1.str);
+            System.out.println("string = "+ object1.str);
         } catch (Exception e) {
            System.out.println("input output exception");
         }
