@@ -5,7 +5,7 @@ public class Tiny_editor {
         String str[] = new String[100];
         System.out.println("write here below the 100 lines");
         System.out.println("write stop to stop writing");
-        for(int i  =0; i<100; i++){
+        for(int i=0; i<100; i++){
             str[i]= br.readLine();
             if(str[i].equals("stop")){
                 break;

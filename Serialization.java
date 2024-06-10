@@ -24,9 +24,7 @@ public class Serialization {
         } catch (Exception e) {
             System.out.println("incought cougght exception");
         }
-
         Demo object1 = null;
-
         try {
             FileInputStream file  = new FileInputStream(filename);
             ObjectInputStream in = new ObjectInputStream(file);
