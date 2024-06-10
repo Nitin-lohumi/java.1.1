@@ -17,7 +17,7 @@ class Ab implements Runnable{
   System.out.println("Exit");
   }
 }
-public class Thread_Join_Alive {
+public class Join_alive {
 public static void main(String args[]){
   Ab a= new Ab("thread 1");
   Ab b= new Ab("thread 2");

@@ -3,7 +3,7 @@ class table{
     synchronized void printTable(int n){
         for( i=0; i<=5; i++){
             System.out.println(n*i);
-            try {
+            try{
                 Thread.sleep(500);
             } catch (Exception e) {
               System.out.println("e  = "+ e);
@@ -19,7 +19,6 @@ class MyThread1 extends Thread{
     public void run(){
         t.printTable(5);
     }
-
 }
 class MyThread2 extends Thread {
     table t;
@@ -29,7 +28,6 @@ class MyThread2 extends Thread {
     public void run(){
         t.printTable(100);
     }
-
 }
 public class Synchronize {
 public static void main(String[] args) {

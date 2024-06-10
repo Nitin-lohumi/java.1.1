@@ -13,7 +13,7 @@ class Demo implements java.io.Serializable{
 public class Serialization {
     public static void main(String[] args) {
         Demo d = new Demo(1, "hello my name is nitin and this is wrote by java");
-        String filename ="C:/Users/Lenovo/Documents/serial.txt";
+        String filename ="C:/Users/Lenovo/Documents/nitin.txt";
         try {
         FileOutputStream file  = new FileOutputStream(filename);
         ObjectOutputStream out  = new ObjectOutputStream(file);
@@ -24,7 +24,9 @@ public class Serialization {
         } catch (Exception e) {
             System.out.println("incought cougght exception");
         }
+
         Demo object1 = null;
+
         try {
             FileInputStream file  = new FileInputStream(filename);
             ObjectInputStream in = new ObjectInputStream(file);

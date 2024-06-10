@@ -1,12 +1,11 @@
 class Test1{
-synchronized static  void print(int n){
+synchronized static  void print(int n){//syncrozation method
     for(int  i=0; i<6; i++){
         System.out.println(n*i);
         try{
             Thread.sleep(1000);
         }
          catch (Exception e) {
-
          }
     }
 }

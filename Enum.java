@@ -3,9 +3,12 @@ class Enum {
       WINTER, SUMMER , SPRING, FALL
     }
     public static void main(String[] args) {
+        Season App;
         for(Season s : Season.values()){
          System.out.println(s);
         }
+        App= Season.valueOf("SUMMER");
+        System.out.println("the value of summer is  "+ App);
         for(Day d : Day.values()){
           System.out.println("day =>"+d);
         }

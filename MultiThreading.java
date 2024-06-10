@@ -1,7 +1,7 @@
 class Thred implements Runnable{
     Thread t;
     String name;
-    Thred( String Threadname){
+    Thred(String Threadname){
       name = Threadname;
       t =new Thread(this,name);
       System.out.println("child thread "+t);
