@@ -1,5 +1,5 @@
 class Test1{
-synchronized static  void print(int n){//syncrozation method
+synchronized static void print(int n){//syncrozation method
     for(int  i=0; i<6; i++){
         System.out.println(n*i);
         try{
@@ -12,17 +12,17 @@ synchronized static  void print(int n){//syncrozation method
 }
 class staticThread1 extends Thread {
     public void run(){
-        Test1.print(10);
+    Test1.print(10);
     }
 }
 class staticThread2 extends Thread {
     public void run(){
-        Test1.print(100);
+     Test1.print(100);
     }
 }
 class staticThread3 extends Thread {
     public void run(){
-        Test1.print(1000);
+    Test1.print(1000);
     }
 }
 public class StaticSynchronize {
